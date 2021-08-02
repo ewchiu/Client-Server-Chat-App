@@ -6,7 +6,7 @@ import socket
 import sys
 
 host = str(sys.argv[1])
-port = str(sys.argv[2])
+port = str(sys.argv[2])                
 
 # establishes server on specified host and port
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
