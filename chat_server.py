@@ -1,13 +1,9 @@
 # Eric Chiu
 # CS 372 Summer 2021
 # Client-Server Chat Implementation
+# Server side of chat
 
 import socket
-import sys
-
-# if len(sys.argv) < 2:
-#     print('Please rerun and specify a port!')
-#     exit()
 
 addr = '127.0.0.1'
 port = 5000 
@@ -37,7 +33,7 @@ while True:
         print(f'client: {recv_msg}')
 
         if '/q' in recv_msg:
-            print('Thanks for stopping by! The connection is being terminated')
+            print('Client terminated connection')
             conn.close()
             server.close()
             exit()
