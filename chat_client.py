@@ -2,6 +2,7 @@
 # CS 372 Summer 2021
 # Client-Server Chat Implementation
 # Client side of chat
+# Referenced https://www.geeksforgeeks.org/simple-chat-room-using-python/
 
 import socket
 

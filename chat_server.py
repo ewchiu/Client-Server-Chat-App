@@ -2,6 +2,7 @@
 # CS 372 Summer 2021
 # Client-Server Chat Implementation
 # Server side of chat
+# Referenced https://www.geeksforgeeks.org/simple-chat-room-using-python/
 
 import socket
 
@@ -12,7 +13,7 @@ port = 5000
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-print('Listening on ' + addr + ' port ' + str(port))
+print(f'Listening on {addr} port {port}')
 
 # create the server using the socket module
 server.bind((addr, port))
