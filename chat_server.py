@@ -1,8 +1,8 @@
 # Eric Chiu
-# CS 372 Summer 2021
-# Client-Server Chat Implementation
+# Client-Server Chat implemented using python's socket module
 # Server side of chat
-# Referenced https://www.geeksforgeeks.org/simple-chat-room-using-python/
+# Type /q to end the chat
+# Run chat_server.py first
 
 import socket
 

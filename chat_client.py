@@ -1,8 +1,7 @@
 # Eric Chiu
-# CS 372 Summer 2021
-# Client-Server Chat Implementation
+# Client-Server Chat implemented using python's socket module
 # Client side of chat
-# Referenced https://www.geeksforgeeks.org/simple-chat-room-using-python/
+# Type /q to end the chat
 
 import socket
 
@@ -12,7 +11,7 @@ port = 5000
 # establishes server on specified host and port
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((addr, port))  
-print(f'You are connecting to {addr} port {port}, kick it off by sending a message!')
+print(f'You are connected to {addr} port {port}, kick it off by sending a message!')
 
 while True:
     # send a message to the server
